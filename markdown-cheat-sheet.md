@@ -100,21 +100,16 @@ function fancyAlert(arg) {
   }
 }
 ```
-or intent 4 spaces
-    function fancyAlert(arg) {
-      if(arg) {
-        $.facebox({div:'#foo'})
-      }
-    }
 ### SHA References
 A comment SHA-1 Hash will automaicaly link to that commit
-254638ad1e6f7a2894db1c3fda89197c84b50d10
+MoulderUtes/Personal_Manuals@254638ad1e6f7a2894db1c3fda89197c84b50d10
 ### Issue or Pull Request Linking
-#1
+MoulderUtes/Personal_Manuals#1
 ### Usernames
 @MoulderUtes
 ### Emoji
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+
 :trollface:
 
 
