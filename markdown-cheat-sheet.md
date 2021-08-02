@@ -102,9 +102,12 @@ function fancyAlert(arg) {
 ```
 ### SHA References
 A comment SHA-1 Hash will automaicaly link to that commit
-MoulderUtes/Personal_Manuals@254638ad1e6f7a2894db1c3fda89197c84b50d10
+
+254638ad1e6f7a2894db1c3fda89197c84b50d10
 ### Issue or Pull Request Linking
-MoulderUtes/Personal_Manuals#1
+outlined [Here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
+
+closed #1
 ### Usernames
 @MoulderUtes
 ### Emoji
