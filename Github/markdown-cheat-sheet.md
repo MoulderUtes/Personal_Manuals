@@ -28,6 +28,9 @@ These are the elements outlined in John Gruber’s original design document. All
 
 *italicized text*
 
+### Excape
+Use \ backslash for escaping a markdown syntax
+
 ### Blockquote
 
 > blockquote
