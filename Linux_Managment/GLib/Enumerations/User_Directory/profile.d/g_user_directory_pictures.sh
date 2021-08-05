@@ -1,0 +1,1 @@
+export G_USER_DIRECTORY_PICTURES=$HOME/Pictures
