@@ -1,10 +1,10 @@
-# Personal Manuals
+# Personal Wiki
 
 A bunch of notes on how to run a computer. Everything from file organization to setting up a git project. 
 
 ## Getting Started
 
-Just read through the guides/manuals/theories they will explain it all
+Just read through the guides/wikis/theories they will explain it all
 
 ### Prerequisites
 
@@ -32,7 +32,7 @@ of conduct, and the process for submitting pull requests to us.
 
 We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
 available, see the [tags on this
-repository](https://github.com/MoulderUtes/Project_Manuals/tags).
+repository](https://github.com/MoulderUtes/Project_Wiki/tags).
 
 ## Authors
 
@@ -40,7 +40,7 @@ repository](https://github.com/MoulderUtes/Project_Manuals/tags).
     [MoulderUtes](https://github.com/MoulderUtes)
 
 See also the list of
-[contributors](https://github.com/MoulderUtes/Personal_Manuals/contributors)
+[contributors](https://github.com/MoulderUtes/Personal_Wiki/contributors)
 who participated in this project.
 
 ## License
