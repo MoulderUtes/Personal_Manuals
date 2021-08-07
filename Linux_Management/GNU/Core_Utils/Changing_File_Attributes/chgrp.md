@@ -18,7 +18,7 @@ chgrp [OPTION] [GROUP]] FILE
 ```
 ## Overview
 1. replace [\[OPTION\]](#options) with any of the options (optional)
-2. replace \[GROUP] with the guid id of the new group (optional)
+2. replace \[GROUP] with the gid id of the new group (optional)
 3. select the file or directory to change
 4. to use reference file use `--reference=RFILE` option where RFILE is the file or directory whose ownership you want to copy (leave owner and group sections empty)
 

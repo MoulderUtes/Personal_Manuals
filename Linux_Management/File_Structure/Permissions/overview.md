@@ -41,4 +41,4 @@ Use `chown` command to modify owner or group. (requires root privileges). See [c
 ### Chgrp
 se `chgrp` command to modify the group. See [chgrp](../../GNU/Core_Utils/Changing_File_Attributes/chgrp.md)
 
-UMASK
+TODO UMASK

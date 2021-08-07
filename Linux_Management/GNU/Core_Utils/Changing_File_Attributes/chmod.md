@@ -95,12 +95,12 @@ Heres a handy chart for reference
 * _ - no special permissions
 * d - directory
 * l - symbolic link
-* s - setuid/setguid permissions (represented as an s in read portion of owner:group permissions)
+* s - setuid/setgid permissions (represented as an s in read portion of owner:group permissions)
 * t - sticky bit permissions (represented as an t in executable portion of all user permissions)
-### Setuid/Setguid 
-Setuid/Setguid tells the system to run a program as the owner with their permissions. DON'T SET THIS SPECIAL PERMISSION TO A FILE OWNED BY ROOT, IT OPENS UP A MASSIVE SECURITY HOLE!!!!
+### Setuid/Setgid 
+Setuid/Setgid tells the system to run a program as the owner with their permissions. DON'T SET THIS SPECIAL PERMISSION TO A FILE OWNED BY ROOT, IT OPENS UP A MASSIVE SECURITY HOLE!!!!
 
-To set the setuid/setguid bit you have to use the symbolic syntax mode of chmod. Simply use s in place of a r,w,or x along with a user or group symbol. `chmod u+s file1`
+To set the setuid/setgid bit you have to use the symbolic syntax mode of chmod. Simply use s in place of a r,w,or x along with a user or group symbol. `chmod u+s file1`
 ### Sticky 
 When the sticky bit is set only the owner can remove or rename files. This is useful when you are in a shared directory. 
 ## *[Back to Overview](../overview.md)*
