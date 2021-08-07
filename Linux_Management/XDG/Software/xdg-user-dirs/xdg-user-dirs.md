@@ -26,4 +26,4 @@ located at `/etc/xed/user-dirs.conf`
 located at `$HOME/.config/user-dirs.dirs` with key value pairs
 * XDG_XXX_DIR="$HOME/YYY"
 
-#### *[Back to Overview](../overview.md)*
+## *[Back to Overview](../overview.md)*

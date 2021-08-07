@@ -5,4 +5,4 @@ The point of the desktop folder is to contain all the .desktop files. Most peopl
 
 ## Rules
 1. Don't store anything except .desktop files here. (Symlinks OK)
-#### *[Back to Overview](../overview.md)*
+## *[Back to Overview](../overview.md)*

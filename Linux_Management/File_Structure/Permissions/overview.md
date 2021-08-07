@@ -1,7 +1,16 @@
 # Permissions
-*Because you don't want you sys admin finding that "homework" folder*
+*Because you don't want you coworkers finding that "homework" folder*
 
 [Good Reference](https://www.linux.com/training-tutorials/understanding-linux-file-permissions/)
+
+**Table of Contents**
+- [Permissions](#permissions)
+  - [Theory](#theory)
+  - [Overview](#overview)
+  - [Viewing Permissions](#viewing-permissions)
+  - [Modifying Permissions](#modifying-permissions)
+  - [Changing Owner/Group](#changing-ownergroup)
+    - [Chgrp](#chgrp)
 ## Theory
 File permissions in linux is one of the most important aspects of security. Without permissions any user with local access has the power of root. Every single linux user needs to learn about and how to set permissions.
 ## Overview
@@ -26,42 +35,10 @@ _rwxrwxrwx 1 owner:group
 2. Following number shows number of hardlinks (alternate names essentially) to the file
 3. Finally the owner and group class assignments in `owner:group`
 ## Modifying Permissions
-To modify permissions we use the **chmod** command. There are two ways to use chmod, explicitly defining and using binary references.
-### Symbolic Syntax 
-Each of the three user based permission classes has a letter assigned to it:
-* u - owner
-* g - group
-* a - all (ugo)
-* o - all others
-Next use a + or - to denote if you ant to add or remove permission
+To modify permissions we use the **chmod** command. Refer to [chmod](../../GNU/Core_Utils/Changing_File_Attributes/chmod.md)
+## Changing Owner/Group
+Use `chown` command to modify owner or group. (requires root privileges). See [chown](../../GNU/Core_Utils/Changing_File_Attributes/chown.md)
+### Chgrp
+se `chgrp` command to modify the group. See [chgrp](../../GNU/Core_Utils/Changing_File_Attributes/chgrp.md)
 
-Then state the permission type or types
-* r - read
-* w - write
-* x - execute
-
-Example: `chmod o-rw file1`
-
-This would remove the read and write permissions for file 1 from all users not included in the owner and group class.  
-### Binary References 
-This is the faster way of changing permissions. It is done using binary code instead of symbolic letters. Each ability has a number associated with it:
-* read = 4
-* write = 2
-* execute = 1
-
-Each class gets the sum of these abilities i.e; for read write and execute permissions it would be 7 (4+2+1). Then all the class numbers are suck together in the order of user, group, others or ugo. 
-
-Example: for everyone to have read write and execute permissions on a file use `chmod 777 file1`
-
-Heres a handy chart for reference
-
- | # | Sum | rwx | Permission |
- |  -----------  |  -----------  |  -----------  |  -----------  |
- | 7 | 4(r) + 2(w) + 1(x) | rwx | read, write and execute |
- | 6 | 4(r) + 2(w) | rw- | read and write |
- | 5 | 4(r) + 1(x) | r-x | read and execute |
- | 4 | 4(r) | r-- | read only |
- | 3 | 2(w) + 1(x) | -wx | write and execute |
- | 2 | 2(w) | -w- | write only |
- | 1 | 1(x) | --x | execute only |
- | 0 | 0 |  | --- | none |
+UMASK
