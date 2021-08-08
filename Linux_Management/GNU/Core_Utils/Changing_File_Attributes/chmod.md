@@ -10,11 +10,11 @@
   - [Overview](#overview)
   - [Modifying Permissions](#modifying-permissions)
     - [Symbolic Syntax](#symbolic-syntax)
-    - [Binary References](#binary-references)
+    - [Octal References](#octal-references)
   - [Options](#options)
   - [Advanced Permissions](#advanced-permissions)
     - [Special Permissions Flag](#special-permissions-flag)
-    - [Setuid/Setguid](#setuidsetguid)
+    - [Setuid/Setgid](#setuidsetgid)
     - [Sticky](#sticky)
   - [*Back to Overview*](#back-to-overview)
 ## Theory
@@ -34,7 +34,7 @@ There are also three user based permission classes
 * all users - all users permissions apply to all other users on the system
 chmod is designed to manage these permissions
 ## Modifying Permissions
-To modify permissions we use the **chmod** command. There are two ways to use chmod, explicitly defining and using binary references.
+To modify permissions we use the **chmod** command. There are two ways to use chmod, explicitly defining and using Octal references.
 ### Symbolic Syntax 
 Each of the three user based permission classes has a letter assigned to it:
 * u - owner
@@ -54,8 +54,8 @@ Then state the permission type or types
 Example: `chmod o-rw file1`
 
 This would remove the read and write permissions for file 1 from all users not included in the owner and group class.  
-### Binary References 
-This is the faster way of changing permissions. It is done using binary code instead of symbolic letters. Each ability has a number associated with it:
+### Octal References 
+This is the faster way of changing permissions. It is done using octal code instead of symbolic letters. Each ability has a number associated with it:
 * read = 4
 * write = 2
 * execute = 1
