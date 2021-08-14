@@ -8,6 +8,7 @@ We are going to follow both the [XDE Base Directory Specification](https://speci
  2. Keep it as clean as possible
  3. Set Permissions Correctly for use case
  4. Create a new home per architecture
+ 5. Preferably separate partition
 ## Layout
 * [Desktop](Desktop/overview.md)
     *
